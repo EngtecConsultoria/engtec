@@ -21,7 +21,7 @@ body {
     background-position: center center; /* Centraliza a imagem na tela */
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
     color: #01094e; /* Cor do texto */
-    padding-top: 70px; /* Compensa o espaço do cabeçalho fixo (evita sobreposição) */
+    
    
 }
 
@@ -84,7 +84,7 @@ nav ul li a:hover {
 button {
     width: 5em;
     height: 2em;
-    border-radius: 30em;
+    border-radius: 10px;
     font-size: 20px;
     font-family: inherit;
     border: none;
@@ -101,11 +101,11 @@ button {
     content: '';
     width: 0                                                                        ;
     height: 2em;
-    border-radius: 30em;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #1c0fd8 0%, #4759f9 100%);
+    background-image: linear-gradient(to right, #0055ffa8 0%, #ffffffa4 100%);
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -180,24 +180,25 @@ p.funcao{
     color: #0f0030;/* Cor do texto */
 }
     
-h2 {
+h2.esquerda {
     font-family: 'Teko', sans-serif; /*Chama o link da fonte para o texto */
-    font-size: 1.5rem; /* Tamanho da fonte dos links */
+    font-size: 1.8rem; /* Tamanho da fonte dos links */
+    font-weight: 500;/*Permite destacar o texto*/
+    color: #01094e;/* Cor do texto */
+   
+    
+}
+
+h2.direita{
+    font-family: 'Teko', sans-serif; /*Chama o link da fonte para o texto */
+    font-size: 1.8rem; /* Tamanho da fonte dos links */
     font-weight: 500;/*Permite destacar o texto*/
     color: #01094e;/* Cor do texto */
     
 }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 300px; /* Tamanho da linha. Diminua esse valor para reduzir a largura */
-    height: 1px; /* Espessura da linha */
-    background-color: #000; /* Cor da linha */
-    margin-top: 1px; /* Espaço entre texto e linha */
-    margin-left: 0;
-    margin-right: auto;
-}
+
+
 
 .linhas::after {
     content: '';
@@ -285,8 +286,8 @@ footer .footer-section ul {
     width: 550px; /* Defina o tamanho desejado */
     height: auto;
     flex-shrink: 0; /* Garante que a imagem não diminua */
-    border-bottom-right-radius: 45px; /* Arredonda o canto inferior direito */
-    border-top-right-radius: 45px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 15px; /* Arredonda o canto inferior direito */
+    border-top-right-radius: 15px; /* Arredonda o canto superior direito */
 }
 
 .bloco-texto-imagem p {
@@ -309,8 +310,8 @@ footer .footer-section ul {
     width: 650px; /* Ajuste o tamanho conforme necessário */
     height: auto;
     flex-shrink: 0;
-    border-bottom-left-radius: 45px;
-    border-top-left-radius: 45px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .bloco-texto-imagem2 p {
@@ -334,8 +335,8 @@ footer .footer-section ul {
     width: 650px; /* Defina o tamanho desejado */
     height: auto;
     flex-shrink: 0; /* Garante que a imagem não diminua */
-    border-bottom-right-radius: 45px; /* Arredonda o canto inferior direito */
-    border-top-right-radius: 45px; /* Arredonda o canto superior direito */
+    border-bottom-right-radius: 15px; /* Arredonda o canto inferior direito */
+    border-top-right-radius: 15px; /* Arredonda o canto superior direito */
 }
 
 /* Responsividade para telas menores */

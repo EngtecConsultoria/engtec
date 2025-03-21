@@ -74,13 +74,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff0000;
+    color: #000000;
 }
 
 button {
     width: 5em;
     height: 2em;
-    border-radius: 30em;
+    border-radius: 10px;
     font-size: 20px;
     font-family: inherit;
     border: none;
@@ -97,11 +97,11 @@ button {
     content: '';
     width: 0                                                                        ;
     height: 2em;
-    border-radius: 30em;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right, #1c0fd8 0%, #4759f9 100%);
+    background-image: linear-gradient(to right, #0055ffa8 0%, #ffffffa4 100%);
     transition: .5s ease;
     display: block;
     z-index: -1;
