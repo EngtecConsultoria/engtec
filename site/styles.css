@@ -23,6 +23,7 @@ body::before {
   z-index: -1; /* Mantém a imagem atrás de todo o conteúdo */
 
 }
+
 /* Estilo do menu de navegação */
 nav ul {
   list-style: none; /* Remove os marcadores da lista */
