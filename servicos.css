@@ -9,10 +9,9 @@
     outline: none; /* Remove contorno de foco */
     background: url('fundo2.PNG') no-repeat center center fixed;
     background-size: cover;
-  
+
 }
 
-                      
 /* Estilo geral do corpo da página */                       
 body {
     font-family: Arial, sans-serif; /* Define a fonte utilizada */
@@ -22,8 +21,8 @@ body {
     background-position: center center; /* Centraliza a imagem na tela */
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
     color: #01094e; /* Cor do texto */
-    padding-top: 70px; /* Compensa o espaço do cabeçalho fixo (evita sobreposição) */
-   
+    
+   
 }
 
 /* Container centralizado */

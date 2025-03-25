@@ -4,7 +4,7 @@ body {
   position: relative; /* Necessário para o ::before funcionar */
   color: #01094e;
   padding-top: 70px;
-  background: url('fundo2.PNG') no-repeat center center fixed;
+  background: url('fundo.png') no-repeat center center fixed;
   background-size: cover;   
   
 }
@@ -17,7 +17,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('fundo.jpg') no-repeat center center fixed;
+  background: url('fundo.png') no-repeat center center fixed;
   background-size: cover;
   opacity: 0.3; /* Controle da transparência da imagem */
   z-index: -1; /* Mantém a imagem atrás de todo o conteúdo */
