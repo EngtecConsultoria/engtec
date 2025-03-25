@@ -16,7 +16,6 @@
 body {
     font-family: Arial, sans-serif; /* Define a fonte utilizada */
     line-height: 1.8; /* Define o espaçamento entre as linhas */
-    background-image: url('fundo2.png'); /* Caminho da imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center center; /* Centraliza a imagem na tela */
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
