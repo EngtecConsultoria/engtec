@@ -5,17 +5,16 @@
     box-sizing: border-box;
     border: none;  /* Remove qualquer borda */
     outline: none; /* Remove contorno de foco */
-    background: url('fundo2.PNG') no-repeat center center fixed;
+    background: url('fundo.png') no-repeat center center fixed;
     background-size: cover;
   
 }
-
-/* Estilo geral do corpo da página */                       
+                      
 /* Estilo geral do corpo da página */                       
 body {
     font-family: Arial, sans-serif; /* Define a fonte utilizada */
     line-height: 1.8; /* Define o espaçamento entre as linhas */
-    background-image: url('fundo2.png'); /* Caminho da imagem */
+    background-image: url('fundo.png'); /* Caminho da imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center center; /* Centraliza a imagem na tela */
     background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa ao rolar a página */
@@ -38,7 +37,6 @@ header {
     padding: 10px 20px;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 99;
     display: flex;
