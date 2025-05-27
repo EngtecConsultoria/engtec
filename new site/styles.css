@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 5px;
+    color: #ffee00;
+    font-size: 16px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+
+    
+    
+}
+
+header {
+    position: fixed;
+    width: 90vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 700px;
+    gap: 10%;
+    z-index: 2;
+
+    & img {
+        margin-top: 5px;
+        width: 130px;
+    }
+
+    & nav {
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            
+        }
+    }
+}
+
+section {
+    background-image: radial-gradient(#5e5e5ec5, #000000);
+    height: 100vh;
+    position: relative;
+
+    & .list {
+        width: 70vw;
+        height: 100%;
+        margin: auto;
+        position: relative;
+
+        & .item {
+            position: absolute;
+            inset: 0;
+
+            & .foto-img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 70%;
+                
+
+                & img {
+                    width: 55%;
+                    /*ignore*/
+                }
+            }
+
+            & .content {
+                position: absolute;
+                right: 100px;
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                gap: 20px;
+
+                & .foto-information {
+                    font-weight: bold;
+                    color: #ffd900;
+                }
+
+                & h2 {
+                    font-size: 7em;
+                    line-height: 1em;
+                    font-family: "League Gothic", sans-serif;
+                    color: #ffcc00;
+                }
+
+                & .description {
+                    color: #d9d9d9;
+                    font-size: 12px;
+                    text-align: right;
+                    max-width: 500px;
+                }
+
+                & .information {
+                    border-radius: 30px;
+                    height: 35px;
+                    width: 120px;
+                    text-transform: uppercase;
+                    border: 2px solid #ffffff57;
+                    background-color: #ffcc00;
+                    color: #000000;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+            border-top: 1px solid #fff;
+        }
+    }
+
+    .arrows {
+        width: 70vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25px);
+        display: flex;
+        justify-content: space-between;
+
+        & button:nth-child(1) {
+            & img {
+                transform: scale(-1);
+            }
+        }
+
+        & button {
+            top: 70%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+
+            & img {
+                width: 20px;
+                margin-top: 1px;
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-color: #f8c808;
+                ;
+            }
+        }
+    }
+
+    .indicators {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100px;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        & .number {
+            font-size: 5em;
+            font-family: "League Gothic", sans-serif;
+        }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: #c5a112;
+                border-radius: 5px;
+                transition: 0.5s;
+            }
+
+            & activa {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+
+
+section {
+
+    & .list {
+
+        & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+            opacity: 0;
+
+            &.foto-img {
+                &img {
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+                }
+            }
+
+            & .content {
+
+                & .foto-information,
+                h2,
+                description,
+                .information {
+                    transform: translateX(200px);
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+                }
+
+                & h2 {
+                    transition-delay: 0.5s;
+                }
+
+                & h2 {
+                    transition-delay: 0.7s;
+                }
+
+                & .description {
+                    transition-delay: 0.9s;
+                }
+
+                & .information {
+                    transition-delay: 0.12s;
+                }
+
+            }
+        }
+
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+
+            &.foto-img{
+                &img{
+                    transform: rotate(-20deg);
+                }
+            }
+
+            & .content {
+
+                & .foto-information,
+                h2,
+                .description,
+                .information {
+                    transform: translateX(0);
+                }
+            }
+
+        }
+    }
+}
