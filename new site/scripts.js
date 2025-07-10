@@ -4,6 +4,9 @@ let container = document.querySelector('.container')
 let items = container.querySelectorAll('.list .item')
 let indicator = document.querySelector('.indicators')
 let dots = indicator.querySelectorAll('ul li')
+let proxButton = document.getElementById('prox')
+
+
 
 let active = 0
 let firstPosiction = 0
@@ -33,5 +36,3 @@ prevButton.onclick = () => {
     setSlider()
     items[active].classList.add('active')
 }
-
-
