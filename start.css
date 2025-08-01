@@ -1,63 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 
 body {
-    background-image: url(./img/fundo.png);
-    background-size: cover;
-    /* cobre toda a área da seção */
-    background-position: center;
-    /* centraliza a imagem */
-    background-repeat: no-repeat;
-    /* evita repetição da imagem */
-    background-attachment: fixed;
-    /* mantém a imagem fixa ao rolar/zoomar */
-    height: 103vh;
-    position: relative;
-    overflow: hidden;
+  background-image: url(./img/fundo.png);
+  background-size: cover;
+  /* cobre toda a área da seção */
+  background-position: center;
+  /* centraliza a imagem */
+  background-repeat: no-repeat;
+  /* evita repetição da imagem */
+  background-attachment: fixed;
+  /* mantém a imagem fixa ao rolar/zoomar */
+  height: 103vh;
+  position: relative;
+  overflow: hidden;
 
 
 }
 
 .container {
 
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* empilha elementos verticalmente */
-    align-items: center;
-    /* centraliza horizontalmente */
-    text-align: center;
-    /* alinha o texto do h2 */
-    gap: 20px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* empilha elementos verticalmente */
+  align-items: center;
+  /* centraliza horizontalmente */
+  text-align: center;
+  /* alinha o texto do h2 */
+  gap: 20px;
 }
 
 .Logo-engtec {
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 47%; /* valor fixo */
-    height: auto; /* mantém proporção da imagem */
-    max-width: 100%; /* evita quebra em telas menores */
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 47%;
+  /* valor fixo */
+  height: auto;
+  /* mantém proporção da imagem */
+  max-width: 100%;
+  /* evita quebra em telas menores */
 }
 
 .description {
-    color: #c7c7c7;
-    font-size: 13px;
-    position: fixed;
-    top: 54%; /* posição vertical fixa */
-    left: 50%; /* centro horizontal */
-    transform: translateX(-50%); /* centraliza exatamente */
-    text-align: center;
-    font-family: "Inconsolata", monospace;
-    
+  color: #c7c7c7;
+  font-size: 13px;
+  position: fixed;
+  top: 54%;
+  /* posição vertical fixa */
+  left: 50%;
+  /* centro horizontal */
+  transform: translateX(-50%);
+  /* centraliza exatamente */
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+
 }
 
 button {
@@ -71,11 +77,12 @@ button {
   cursor: pointer;
 
   position: absolute;
-  top: 59%; /* Posição vertical ajustável */
+  top: 59%;
+  /* Posição vertical ajustável */
   left: 50%;
   transform: translate(-50%, -50%);
 
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -105,4 +112,78 @@ button span:hover {
 button span:not(hover) {
   transition: all 1s;
 }
-      
+
+@media screen and (max-width: 1020px) {
+  .Logo-engtec {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    /* valor fixo */
+    height: auto;
+    /* mantém proporção da imagem */
+  }
+
+  .description {
+    color: #c7c7c7;
+    font-size: 7.5px;
+    position: fixed;
+    top: 50%;
+    /* posição vertical fixa */
+    left: 50%;
+    /* centro horizontal */
+    transform: translateX(-50%);
+    /* centraliza exatamente */
+    text-align: center;
+    font-family: "Inconsolata", monospace;
+
+  }
+
+  button {
+    padding: 0.1em 0.25em;
+    width: 8.97em;
+    height: 3.5em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 8px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 59%;
+    /* Posição vertical ajustável */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  button span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 5.54em;
+    height: 2.1em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+
+  button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+
+  button span:not(hover) {
+    transition: all 1s;
+  }
+}
