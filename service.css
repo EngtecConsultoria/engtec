@@ -316,29 +316,9 @@ header a {
 }
 
 @media screen and (max-width: 1020px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        list-style: none;
-        font-family: "Roboto", sans-serif;
-    }
-
-    body {
-        background-color: black;
-        margin-top: 50px;
-        color: #ffffffde;
-        font-size: 16px;
-        overflow: hidden;
-        font-family: "Roboto", sans-serif;
-    }
-
     header {
         position: fixed;
         width: 90vw;
-        left: 50%;
-        transform: translateX(-50%);
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 700px;
@@ -630,7 +610,7 @@ header a {
             width: 40px;
             height: 40px;
             border-radius: 10px;
-
+            
             bottom: 50px;
         }
     }
