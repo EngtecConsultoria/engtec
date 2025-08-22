@@ -108,8 +108,8 @@ header a {
 }
 
 .container .list .list-item .description {
-    font-size: 1.2em;
-    width: 740px;
+    font-size: 1.1em;
+    width: 670px;
 }
 
 .container .list .list-item .buttons {
@@ -122,7 +122,7 @@ header a {
 
 .container .list .list-item .buttons button {
     border: none;
-    background-color: #eee;
+    background-color: #eeeeee;
     letter-spacing: 3px;
     font-weight: 500;
     cursor: pointer;
@@ -316,13 +316,14 @@ header a {
 }
 
 @media screen and (max-width: 1020px) {
+    
     header {
         position: fixed;
         width: 90vw;
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 700px;
-        gap: 10%;
+        gap: 30%;
         z-index: 2;
 
         & img {
@@ -400,14 +401,14 @@ header a {
 
     .container .list .list-item .title {
         color: #9b9b9b;
-        font-size: 1.2em;
+        font-size: 40px;
         line-height: 1.3em;
 
     }
 
     .container .list .list-item .description {
-        font-size: 0.6em;
-        width: 225px;
+        font-size: 14px;
+        width: 325px;
     }
 
     .container .list .list-item .buttons {
@@ -428,7 +429,7 @@ header a {
         text-transform: uppercase;
         padding: 7px;
         border-radius: 5px;
-        font-size: 0.5em;
+        font-size: 12px;
     }
 
     .container .list .list-item .buttons button:hover {
@@ -452,14 +453,14 @@ header a {
     .container .thumb {
         position: absolute;
         bottom: 50px;
-        left: -0px;
+        left: 4px;
         display: flex;
-        gap: 5px;
+        gap: 6px;
 
     }
 
     .container .thumb .thumb-item {
-        width: 40px;
+        width: 45px;
         height: 40px;
         position: relative;
         z-index: 3;
@@ -488,7 +489,7 @@ header a {
     .container .arrows {
         display: flex;
         align-items: center;
-        gap: 220px;
+        gap: 315px;
         position: absolute;
         bottom: 120px;
         left: 12px;
